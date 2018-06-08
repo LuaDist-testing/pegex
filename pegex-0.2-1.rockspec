@@ -1,9 +1,17 @@
+-- This file was automatically generated for the LuaDist project.
+
 package = "pegex"
-version = "0.1-1"
+version = "0.2-1"
+-- LuaDist source
 source = {
-   url = "git://github.com/jugglerchris/ta-regex",
-   tag = "v0.1"
+  tag = "0.2-1",
+  url = "git://github.com/LuaDist-testing/pegex.git"
 }
+-- Original source
+-- source = {
+--    url = "git://github.com/jugglerchris/ta-regex",
+--    tag = "v0.2"
+-- }
 description = {
    summary = "Regular expression/regexp implementation using LPeg.",
    detailed = [[An implementation of regular expressions using LPeg, based on the paper at:
@@ -20,6 +28,6 @@ dependencies = {
 build = {
    type = "builtin",
    modules = {
-      regex = "regex.lua",
+      pegex = "pegex.lua",
    }
 }
